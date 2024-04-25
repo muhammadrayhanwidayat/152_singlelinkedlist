@@ -174,7 +174,11 @@ int main()
                 system("pause");
                 system("cls");
                 break;
-
+            case 4:
+                searchData();
+                system("pause");
+                system("cls");
+                break;
     
 }
 
