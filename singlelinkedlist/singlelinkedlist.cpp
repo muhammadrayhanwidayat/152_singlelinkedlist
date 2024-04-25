@@ -160,6 +160,21 @@ int main()
                     system("cls");
                 }
                 break;
+            case 3:
+                int nim;
+                cout << "Masukkan NIM: ";
+                cin >> nim;
+
+                if (deleteNode(nim)) {
+                    cout << "Data Berhasil Dihapus" << endl;
+                }
+                else {
+                    cout << "Data tidak ditemukan" << endl;
+                }
+                system("pause");
+                system("cls");
+                break;
+
     
 }
 
