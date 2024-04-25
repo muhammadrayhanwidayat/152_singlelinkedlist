@@ -50,6 +50,13 @@ while ((current != NULL) && (nim >= current->noMhs)) {
     previous->next = nodeBaru;
 }
 
+bool searchNode(int nim, Node current, Node* previous) {
+    while (current != NULL && nim > current->noMhs) {
+        previous = current;
+        current = current->next;
+    }
+}
+
 
 
 
