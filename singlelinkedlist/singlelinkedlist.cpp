@@ -4,7 +4,7 @@ using namespace std;
 
 
 struct Node {
-    int nomhs;
+    int noMhs;
     string name;
     Node* next;
 };
@@ -19,9 +19,19 @@ void addNode() {
     cin >> nim;
     cout << "masukan Nama: ";
     cin >> nama;
-    nodeBaru->nomhs = nim;
+    nodeBaru->noMhs = nim;
     nodeBaru->name = nama;
 
+    if (START == NULL || nim <= START ->noMhs){
+        if (START != NULL && nim == START->noMhs) {
+            cout << "NIM sudah ada" << endl;
+            return;
+        }
+
+        nodeBaru->next = START;
+        START = nodeBaru;
+        return;
+    }
 }
 
 
